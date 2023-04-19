@@ -28,33 +28,9 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
+    <link href="css/external.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet" />
 </head>
-<style>
-    .logo_grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 10px;
-    }
-    
-    .logo_item img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .logo_item {
-        margin: 0 auto;
-    }
-    
-    @media screen and (max-width: 768px) {
-        .logo_grid {
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            grid-gap: 5px;
-        }
-    }
-</style>
-
-
 <body>
     <div class="hero_area">
         <!-- header section strats -->
@@ -64,7 +40,7 @@
                     <a class="navbar-brand" href="index.html">
                         <img src="images/logo.png" alt="" />
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -106,15 +82,15 @@
 
         <section class="slider_section">
             <div class="slider_container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        <li class="active">
                             01
                         </li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                        <li>
                             02
                         </li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                        <li>
                             03
                         </li>
                     </ol>
@@ -144,66 +120,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 px-0">
-                                        <div class="img-box">
-                                            <img src="images/slider-img.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="detail-box">
-                                            <h1>
-                                                Design
-                                                <br /> Agency
-                                            </h1>
-                                            <p>
-                                                There are many variations of passages of Lorem Ipsum available, but the
-                                            </p>
-                                            <a href="">
-                        Contact Us
-                      </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 px-0">
-                                        <div class="img-box">
-                                            <img src="images/slider-img.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="detail-box">
-                                            <h1>
-                                                Design
-                                                <br /> Agency
-                                            </h1>
-                                            <p>
-                                                There are many variations of passages of Lorem Ipsum available, but the
-                                            </p>
-                                            <a href="">
-                        Contact Us
-                      </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel_btn-box">
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <img src="images/line.png" alt="" />
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
+                        
                 </div>
             </div>
         </section>
@@ -227,38 +144,38 @@
             <div class="row">
                 <div class="col-lg-6 ">
                     <div class="img-container tab-content">
-                        <div class="img-box tab-pane fade show active" id="img1" role="tabpanel">
+                        <div class="img-box tab-pane fade show active" id="img1">
                             <img src="images/service-img.jpg" alt="" />
                         </div>
-                        <div class="img-box tab-pane fade  " id="img2" role="tabpanel">
+                        <div class="img-box tab-pane fade  " id="img2">
                             <img src="images/service-img.jpg" alt="" />
                         </div>
-                        <div class="img-box tab-pane fade  " id="img3" role="tabpanel">
+                        <div class="img-box tab-pane fade  " id="img3">
                             <img src="images/service-img.jpg" alt="" />
                         </div>
-                        <div class="img-box tab-pane fade  " id="img4" role="tabpanel">
+                        <div class="img-box tab-pane fade  " id="img4">
                             <img src="images/service-img.jpg" alt="" />
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="detail-container nav nav-tabs" id="myTab" role="tablist">
-                        <div class="detail-box active" id="img1-tab" data-toggle="tab" href="#img1" role="tab" aria-selected="true">
+                    <div class="detail-container nav nav-tabs" id="myTab">
+                        <div class="detail-box active" id="img1-tab" href="#img1">
                             <h4>
                                 Website <br /> design
                             </h4>
                         </div>
-                        <div class="detail-box" id="img2-tab" data-toggle="tab" href="#img2" role="tab" aria-selected="false">
+                        <div class="detail-box" id="img2-tab" href="#img2" >
                             <h4>
                                 Logo <br /> design
                             </h4>
                         </div>
-                        <div class="detail-box" id="img2-tab" data-toggle="tab" href="#img3" role="tab" aria-selected="false">
+                        <div class="detail-box" id="img2-tab" href="#img3" >
                             <h4>
                                 brochure <br /> design
                             </h4>
                         </div>
-                        <div class="detail-box" id="img2-tab" data-toggle="tab" href="#img4" role="tab" aria-selected="false">
+                        <div class="detail-box" id="img2-tab" href="#img4" >
                             <h4>
                                 visiting card <br /> design
                             </h4>
@@ -489,7 +406,7 @@
               </button>
                         </div>
                     </form>
-                </div>
+                </div>  
             </div>
         </div>
     </section>
@@ -509,7 +426,7 @@
                 <div class="client_id">
                     <div class="name">
                         <h4>
-                            Sandy <br> Nor
+                            Vivek <br> Joshi
                         </h4>
                     </div>
                     <div class="img-box">
@@ -518,8 +435,7 @@
                 </div>
                 <div class="detail-box">
                     <p>
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem
-                    </p>
+                        "An exceptional digital agency website with an impressive portfolio, seamless user experience, and cutting-edge technology."                    </p>
                     <img src="images/quote.png" alt="">
                 </div>
             </div>
@@ -556,15 +472,16 @@
                             ABOUT US
                         </h6>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-                        </p>
+                            At our company, we are passionate about using technology to drive business success.
+                            Our team of experts specializes in creating tailored digital solutions that deliver results for our clients.
+                            From website design and development to digital marketing and advertising, we are dedicated to helping businesses thrive in the digital age.                        </p>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h6>
                             Instagram
                         </h6>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed doLorem ipsum dolor sit
+                            @ Diffuso
                         </p>
                     </div>
                     <div class="col-md-6 col-lg-3">
@@ -572,8 +489,10 @@
                             NEED HELP
                         </h6>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-                        </p>
+                            If you're looking to take your business to the next level, our team at Agency is here to help.
+                            We offer a wide range of digital services to help businesses thrive, from website design and development to digital marketing and advertising.
+                            Whether you need help creating a strong online presence or developing a custom digital strategy, our team of experts is here to support you every step of the way.
+                                                                 </p>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h6>
@@ -582,7 +501,7 @@
                         <div class="info_link-box">
                             <a href="">
                                 <img src="images/location.png" alt="">
-                                <span> Gb road 123 london Uk </span>
+                                <span> 2238 london Uk </span>
                             </a>
                             <a href="">
                                 <img src="images/call.png" alt="">
@@ -590,7 +509,7 @@
                             </a>
                             <a href="">
                                 <img src="images/mail.png" alt="">
-                                <span>kv@gmail.com</span>
+                                <span>info@Diffuso.com</span>
                             </a>
                         </div>
                     </div>
@@ -602,7 +521,7 @@
             <div class="container">
                 <p>
                     &copy; <span id="displayYear"></span> All Rights Reserved By
-                    <a href="">Kasyap Vyas</a>
+                    <a href="index.html">Diffuso</a>
                 </p>
             </div>
         </section>
